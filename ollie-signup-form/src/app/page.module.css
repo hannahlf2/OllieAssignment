@@ -1,25 +1,28 @@
-
 .main {
   display: flex;
   flex-direction: row;
   padding: 32px;
   padding-bottom: 80px;
   justify-content: space-between;
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
   gap: 24px;
+  align-items: center;
 }
 
-.image, .newSignupForm { 
-  flex: 1; 
+.image,
+.newSignupForm {
+  flex: 1;
   display: block;
   margin: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .page {
   margin: 0 auto;
 }
+
 
 .footer {
   grid-row-start: 3;
@@ -37,16 +40,13 @@
     align-items: center;
     flex-direction: column;
   }
-
+ .newSignupForm {
+    align-items: flex-start; /* Align form fields to the left */
+    width: 90%;
+  }
   .footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (max-width: 660px) {
-  .image {
-    padding: 0 32px 0 0;
   }
 }
